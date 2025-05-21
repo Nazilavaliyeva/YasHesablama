@@ -29,9 +29,9 @@ namespace YasHesablama
 
                 label1.Text = age.ToString();
             }
-            catch 
+            catch (Exception ex)
             { 
-                label1.Text = "Zəhmət olmasa düzgün tarix daxil edin";
+                MessageBox.Show("Xahiş olunur ili düzgün daxil edin", "Xəta", MessageBoxButtons.OK, MessageBoxIcon.Error);  
 
             }
             
